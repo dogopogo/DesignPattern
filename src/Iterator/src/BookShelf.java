@@ -1,15 +1,18 @@
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 本棚を表す
  */
 public class BookShelf implements Aggregate {
-	private Book[] books;
+	private List<Book> books;
 	private int last = 0;
 
 	/**
 	 * @param maxsize 本棚に格納できる本の最大数
 	 */
 	public BookShelf(int maxsize) {
-		this.books = new Book[maxsize];
+		this.books = new ArrayList<Book>();
 	}
 
 	/**
@@ -18,20 +21,20 @@ public class BookShelf implements Aggregate {
 	 * @return indexに対応した本
 	 */
 	public Book getBookAt(int index) {
-		return books[index];
+		return books.get(index);
 	}
 
 	/**
-	 * 本を本棚の最後に格納する
+	 * 本を本棚の最後に格納する。
 	 * @param book 本
 	 */
 	public void appendBook(Book book) {
-		this.books[last] = book;
+		this.books.add(book);
 		last++;
 	}
 
 	/**
-	 * 本棚に格納されている本の数を返す
+	 * 本棚に格納されている本の数を返す。
 	 * @return 本の数
 	 */
 	public int getLength() {

@@ -13,6 +13,7 @@ public class Main {
 		bookShelf.appendBook(new Book("Bible"));
 		bookShelf.appendBook(new Book("Cinderella"));
 		bookShelf.appendBook(new Book("Daddy-Long-Legs"));
+		bookShelf.appendBook(new Book("effective c++"));
 		Iterator it = bookShelf.iterator();
 		while (it.hasNext()) {
 			Book book = (Book) it.next();

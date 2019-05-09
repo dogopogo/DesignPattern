@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Adapter/src"/>
+	<classpathentry kind="src" path="AdapterWork/src"/>
+	<classpathentry kind="src" path="Iterator/src"/>
+	<classpathentry kind="output" path="Adapter/bin"/>
+</classpath>

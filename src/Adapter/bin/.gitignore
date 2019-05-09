@@ -1,6 +1,14 @@
+/Aggregate.class
 /Banner.class
+/Book.class
+/BookShelf.class
+/BookShelfIterator.class
+/FileIO.class
+/FileProperties.class
+/Iterator.class
 /Main.class
 /Print.class
 /PrintBanner.class
 /PrintBannerClass.class
 /PrintClass.class
+/AbstractDisplay.class
